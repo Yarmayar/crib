@@ -66,6 +66,27 @@ git push
 
 	MODIFIED - означает, что Git сравнил содержимое файла с его последней сохраненной версией и НАШЕЛ ОТЛИЧИЯ.
 
+HEAD -- это голова.
+Коммит -- это всему голова.
+Статусы файлов:
+
+UNTRACKED
+STAGED
+TRACKED
+MODIFIED
+
+```mermaid
+graph LR;
+	untracked -- "git add" --> staged;
+	staged -- "git commit" --> tracked;
+	tracked -- "изменения" --> modified;
+	modified -- "git add" --> staged;
+	staged -- "изменения" --> modified;
+
+%% Схема статусов файлов в Git
+```
+
+
 3. Какие состояния показывает git status:
 	3.1 staged (changes to be committed)
 	3.2 modified (Changes not staged for commit)
