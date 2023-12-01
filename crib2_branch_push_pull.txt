@@ -1,0 +1,4 @@
+Шпаргалка. Работа с ветками
+Клонирование чужого репозитория
+git clone git@github.com:YandexPraktikum/first-project.git (от англ. clone, «клон», «копия») — склонируй репозиторий с URL first-project.git из аккаунта YandexPraktikum на мой локальный компьютер.
+
